@@ -1,0 +1,38 @@
+{
+  "name": "zgm053uka",
+  "version": "1.0.0",
+  "description": "get readings from ZGm053UKA Mini CO₂ Monitor",
+  "type": "module",
+  "engines": {
+    "node": ">=13.2.0"
+  },
+  "main": "zgm053uka.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robireton/zgm053uka.git"
+  },
+  "keywords": [
+    "usb",
+    "hid",
+    "zgm053uka",
+    "co2"
+  ],
+  "author": "Rob Ireton <rob@ireton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robireton/zgm053uka/issues"
+  },
+  "homepage": "https://github.com/robireton/zgm053uka#readme",
+  "standard": {
+    "globals": [
+      "BigInt"
+    ]
+  },
+  "dependencies": {
+    "node-hid": "^2.1.1",
+    "usb": "^1.6.4"
+  }
+}
