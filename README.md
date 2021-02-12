@@ -1,4 +1,9 @@
-# zgm053uka [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# zgm053uka 
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![current version](https://img.shields.io/npm/v/zgm053uka)](https://www.npmjs.com/package/zgm053uka)
+<!-- [![install size](https://packagephobia.com/badge?p=zgm053uka)](https://packagephobia.com/result?p=zgm053uka) -->
+
 get CO₂ concentration and temperature readings from a ZGm053UKA Mini CO₂ Monitor
 
 ## Setup
