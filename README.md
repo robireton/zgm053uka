@@ -1,4 +1,4 @@
-# zgm053uka
+# zgm053uka [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 get CO₂ concentration and temperature readings from a ZGm053UKA Mini CO₂ Monitor
 
 ## Setup
@@ -56,4 +56,6 @@ Tell this module to stop listening to the underlying USB device.
 I learned how to decrypt the messages from reading the code for [vfilimonov/co2meter](https://github.com/vfilimonov/co2meter).
 
 [Henryk Plötz](https://hackaday.io/project/5301) seems to have paved the way.
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
