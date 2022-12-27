@@ -1,12 +1,12 @@
-import eventEmitter from 'events'
-import hid from 'node-hid'
-import usb from 'usb'
+import { EventEmitter } from 'node:events'
+import { HID } from 'node-hid'
+import { usb } from 'usb'
 
 const idVendor = 0x04d9 // Holtek Semiconductor, Inc.
 const idProduct = 0xa052 // USB-zyTemp
 const warmup = 30 // seconds until device is available
 
-export default class ZGm053UKA extends eventEmitter {
+export default class ZGm053UKA extends EventEmitter {
   constructor () {
     super()
     try {
@@ -25,7 +25,7 @@ export default class ZGm053UKA extends eventEmitter {
 
   initialize () {
     const magicTable = [0, 0, 0, 0, 0, 0, 0, 0]
-    const device = new hid.HID(idVendor, idProduct)
+    const device = new HID(idVendor, idProduct)
 
     device.on('error', error => {
       this.emit('error', error)
@@ -48,7 +48,7 @@ export default class ZGm053UKA extends eventEmitter {
           break
 
         default:
-          this.emit('other', { code: message[0], value: value, message: Buffer.from(message), raw: data })
+          this.emit('other', { code: message[0], value, message: Buffer.from(message), raw: data })
       }
     })
 
