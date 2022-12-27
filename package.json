@@ -1,6 +1,6 @@
 {
   "name": "zgm053uka",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get readings from ZGm053UKA Mini CO₂ Monitor",
   "type": "module",
   "engines": {
@@ -32,7 +32,7 @@
     ]
   },
   "dependencies": {
-    "node-hid": "^2.1.1",
-    "usb": "^1.6.4"
+    "node-hid": "^2.1.2",
+    "usb": "^2.6.0"
   }
 }
